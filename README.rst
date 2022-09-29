@@ -1,6 +1,6 @@
 |pypi| |actions| |codecov| |downloads|
 
-edc-adherence
+EDC Adherence
 -------------
 
 Classes to manage adherence
