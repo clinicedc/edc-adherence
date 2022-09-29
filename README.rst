@@ -1,9 +1,11 @@
 |pypi| |actions| |codecov| |downloads|
 
-edc-adherence
+
+EDC Adherence
 -------------
 
 Classes to manage adherence
+
 
 
 .. |pypi| image:: https://img.shields.io/pypi/v/edc-blood-results.svg
