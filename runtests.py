@@ -21,6 +21,7 @@ DEFAULT_SETTINGS = DefaultTestSettings(
     SUBJECT_VISIT_MODEL="edc_adherence.subjectvisit",
     SUBJECT_VISIT_MISSED_MODEL="edc_adherence.subjectvisitmissed",
     SUBJECT_REQUISITION_MODEL="edc_adherence.subjectrequisition",
+    SUBJECT_LOCATOR_MODEL="edc_locator.subjectlocator",
     LIST_MODEL_APP_LABEL="edc_adherence",
     INSTALLED_APPS=[
         "django.contrib.admin",
@@ -41,6 +42,7 @@ DEFAULT_SETTINGS = DefaultTestSettings(
         "edc_facility.apps.AppConfig",
         "edc_lab.apps.AppConfig",
         "edc_list_data.apps.AppConfig",
+        "edc_locator.apps.AppConfig",
         "edc_metadata.apps.AppConfig",
         "edc_model_admin.apps.AppConfig",
         "edc_offstudy.apps.AppConfig",
