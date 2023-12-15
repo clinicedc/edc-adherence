@@ -17,10 +17,10 @@ skip = [".tox", ".eggs", "migrations"]
 [tool.coverage.run]
 parallel = false
 branch = true
-source = ["edc_subject_dashboard"]
+source = ["edc_adherence"]
 
 [tool.coverage.paths]
-source = ["edc_subject_dashboard"]
+source = ["edc_adherence"]
 
 [tool.coverage.report]
 show_missing = true
