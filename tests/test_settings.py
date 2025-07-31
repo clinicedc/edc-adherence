@@ -7,13 +7,16 @@ from edc_test_settings.default_test_settings import DefaultTestSettings
 from edc_utils import get_utcnow
 
 app_name = "edc_adherence"
-base_dir = Path(__file__).absolute().parent.parent.parent
+base_dir = Path(__file__).absolute().parent.parent
 
 project_settings = DefaultTestSettings(
     calling_file=__file__,
     BASE_DIR=base_dir,
     APP_NAME=app_name,
-    ETC_DIR=str(base_dir / app_name / "tests" / "etc"),
+    ETC_DIR=base_dir / "tests" / "etc",
+    RANDOMIZATION_LIST_PATH=base_dir / "tests" / "test_randomization_list.csv",
+    HOLIDAY_FILE=base_dir / "tests" / "holidays.csv",
+    DJANGO_REVISION_IGNORE_WORKING_DIR=True,
     LIST_MODEL_APP_LABEL="edc_adherence",
     EDC_SITES_REGISTER_DEFAULT=True,
     EDC_PROTOCOL_STUDY_OPEN_DATETIME=(
@@ -55,7 +58,6 @@ project_settings = DefaultTestSettings(
         "edc_visit_tracking.apps.AppConfig",
         "edc_adherence.apps.AppConfig",
     ],
-    RANDOMIZATION_LIST_PATH=str(base_dir / app_name / "tests" / "test_randomization_list.csv"),
     add_dashboard_middleware=False,
     use_test_urls=True,
 ).settings
