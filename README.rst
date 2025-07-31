@@ -8,7 +8,7 @@ Classes to manage adherence
 
 
 
-.. |pypi| image:: https://img.shields.io/pypi/v/edc-blood-results.svg
+.. |pypi| image:: https://img.shields.io/pypi/v/edc-adherence.svg
     :target: https://pypi.python.org/pypi/edc-adherence
 
 .. |actions| image:: https://github.com/clinicedc/edc-adherence/actions/workflows/build.yml/badge.svg
