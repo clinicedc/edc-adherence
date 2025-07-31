@@ -69,6 +69,9 @@ class MedicationAdherenceAdminMixin:
         audit_fieldset_tuple,
     )
 
-    radio_fields = {"pill_count_performed": admin.VERTICAL, "last_missed_pill": admin.VERTICAL}
+    radio_fields = {
+        "pill_count_performed": admin.VERTICAL,
+        "last_missed_pill": admin.VERTICAL,
+    }
 
     filter_horizontal = ("missed_pill_reason",)
